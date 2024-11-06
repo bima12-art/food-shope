@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Food Banner</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #FFA800;
+      font-family: Arial, sans-serif;
+    }
+
+    .banner {
+      width: 90%;
+      max-width: 1200px;
+      height: 300px;
+      background-color: #1D1D38;
+      display: flex;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Logo section */
+    .logo {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .logo span {
+      color: #FFA800;
+    }
+
+    /* Circular images */
+    .images {
+      display: flex;
+      gap: 15px;
+    }
+
+    .images img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 4px solid #FFA800;
+      object-fit: cover;
+    }
+
+    /* Text content */
+    .content {
+      flex: 1;
+      color: #FFF;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .content h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #FFA800;
+      margin-bottom: 20px;
+    }
+
+    /* Order section */
+    .order {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .order a {
+      background-color: #FFA800;
+      color: #1D1D38;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .order a:hover {
+      background-color: #ffc34d;
+    }
+
+    .discount {
+      background-color: #FFF;
+      color: #1D1D38;
+      padding: 8px 16px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="logo">
+      <span>GRAPHICS</span>FAMILY
+    </div>
+
+    <div class="images">
+      <img src="makanan1.jpg" alt="Food 1">
+      <img src="makanan2.jpg" alt="Food 2">
+      <img src="makanan3.jpg" alt="Food 3">
+    </div>
+
+    <div class="content">
+      <h1>WEB BANNER</h1>
+      <p>DELICIOUS FOOD</p>
+    </div>
+
+    <div class="order">
+      <div class="discount">50% OFF</div>
+      <a href="https://wa.me/6282211862691?text=Hello%20I%20would%20like%20to%20order!" target="_blank">ORDER NOW</a>
+    </div>
+  </div>
+
+</body>
+</html>
